@@ -15,7 +15,7 @@ Should the business price or underwrite on these variables?
 ---
 3. Data Sourcing
 Dataset: one table of 37,542 policies (one row per policy) with 16 columns.
-Source: The dataset was gotten as a project for my internship.
+Source: [add where the dataset came from, e.g. the training provider or platform]
 Formats used: CSV (`Car_Insurance.csv`) and Excel (`Car_Insurance.xlsx`).
 Group	Columns
 Policy	`ID`, `coverage_zone`, `car_use` (private / commercial)
@@ -83,18 +83,21 @@ RETURN
 ```
 ---
 7. Dashboard and Visuals
-> 📌 **Add your final dashboard screenshots to an `images/` folder and keep the file names below, so the pictures show.** Edit the descriptions so they match your finished pages.
-Page 1: Claims Overview
+The Power BI dashboard has two pages. Page 1 is the main view and carries the headline finding; Page 2 gives supporting detail. The NEXT and BACK buttons move between them.
+Page 1: Claims Overview and Key Finding
 ![Car Insurance dashboard, page 1](images/car_insurance_page1.png)
-Headline cards: total claim amount and total number of car makes.
-Slicers: coverage zone and gender, so every visual on the page can be filtered.
+Headline cards: average claim amount (about 50K) and the total number of policies analysed (37,542).
+Slicers: gender and coverage zone, so every visual on the page can be filtered.
 Claims by car model and by car make: bar charts showing which vehicles appear most often in claims.
 Education by claim amount: a donut chart of claims split by education level.
-Average claim amount by coverage zone: shows that average claims are almost identical across zones.
-Detail table: policy-level figures for drilling into specific records.
-Page 2: 
+Average claim amount by coverage zone: compares coverage zones. Averages are almost identical across zones.
+Car colour by claim frequency and amount: claims across car colours are nearly flat, matching the statistical result.
+Gender, car usage and kids driving: the split of policies by gender and number of kids driving.
+Key finding box: a plain-language summary: six factors were tested, none predict claim amounts, and the recommendation is not to price on them and to collect better risk data instead.
+Page 2: Claim Detail by Vehicle, Income and Education
 ![Car Insurance dashboard, page 2](images/car_insurance_page2.png)
-[add a short description of what this page shows]
+Detail tables: the average claim amount and the number of policies, broken down by car model, household income band and education. Household income is grouped into five bands (under 50K, 50K-100K, 100K-150K, 150K-200K and 200K+) because almost every household has a different exact income. The average claim stays at about 50K in every band, which matches the statistical result.
+Average claim amount by car model and by car make: donut charts comparing how evenly claims are spread.
 ---
 8. Recommendation
 Do not build a pricing or underwriting model on these six variables. Formal testing confirms that none of them separate high-risk from low-risk policyholders.
