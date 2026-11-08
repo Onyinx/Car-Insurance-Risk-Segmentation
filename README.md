@@ -92,7 +92,7 @@ Claims by car model and by car make: bar charts showing which vehicles appear mo
 Education by claim amount: a donut chart of claims split by education level.
 Average claim amount by coverage zone: shows that average claims are almost identical across zones.
 Detail table: policy-level figures for drilling into specific records.
-Page 2: [add a title, if your dashboard has a second page]
+Page 2: 
 ![Car Insurance dashboard, page 2](images/car_insurance_page2.png)
 [add a short description of what this page shows]
 ---
