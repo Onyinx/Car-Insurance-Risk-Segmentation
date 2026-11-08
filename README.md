@@ -15,7 +15,7 @@ Should the business price or underwrite on these variables?
 ---
 3. Data Sourcing
 Dataset: one table of 37,542 policies (one row per policy) with 16 columns.
-Source: [add where the dataset came from, e.g. the training provider or platform]
+Source: The Dataset was given during my internship, "C:\Users\HP\Downloads\Analysis\Car Insurance\Car_Insurance_Analysis_v3.xlsx"
 Formats used: CSV (`Car_Insurance.csv`) and Excel (`Car_Insurance.xlsx`).
 Group	Columns
 Policy	`ID`, `coverage_zone`, `car_use` (private / commercial)
